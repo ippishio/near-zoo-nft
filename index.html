@@ -1,23 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zoo NFT</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
-<link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-</head>
-<body>
-    <script src="https://cdn.jsdelivr.net/npm/near-api-js@0.41.0/dist/near-api-js.min.js"></script>
+{ % extends "base.html" %}
+{% block content %}
+<script src="https://cdn.jsdelivr.net/npm/near-api-js@0.41.0/dist/near-api-js.min.js"></script>
     <script type = "module"  src = "index.js"></script>
     <h1 id="greet">Hello!</h1>
     <button id ="log-out">login out</button>
@@ -28,6 +11,5 @@
     <div id="zootext"><a>Ukrainian Zoo's have bad times during the war, their inhabitants may simply not survive due to lack of food😔️💔️. 
         I've created this NFT collection to support them, it's based on animals of Kyiv ZOO😺️. With this site, you can take your little digital animal from the zoo, 
         name it as you like and help the real ones.
-    </a> <p><small>P.S. Also, name displays in the wallet, so it's like your digital pet :)</p></small> </div>
-</body>
-</html>
+    </a> <p><small>P.S. Also, name displays in the wallet, so it's like your digital pet :)</small></p> </div>
+{ % endblock }
